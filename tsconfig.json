@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "sourceMap": false,
+    "target": "es5",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "module": "es2020",
+    "downlevelIteration": true,
+    "lib": [ "es2020", "DOM", "ES6" ,"DOM.Iterable", "ScriptHost"],
+    "outDir": "theme/assets",
+    "paths": {
+      "types/*": [
+        "./types.d.ts/*"
+      ]
+    }
+  },
+  "ts-node": {
+      "esm": true
+  },
+  "files": [
+    "src/server/types/global.d.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "ignorePatterns": ["*/tools/*", "*.d.ts", "jest.*", "*.test.*", "babel*"],
+  "exclude": [
+    "node_modules"
+  ]
+}

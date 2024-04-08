@@ -1,0 +1,18 @@
+
+.btn {
+  appearance: none;
+  border-radius: 18px;
+  height: 36px;
+  min-width: 104px;
+  text-align: center;
+  border: 1px solid $color-btn-text;
+  color: $color-btn-text;
+  cursor: pointer;
+  color: $color-btn-text;
+  background-color: $color-btn-bg;
+  font-size: 1rem;
+
+  &--active {
+    background-color: $color-btn-bg-active;
+  }
+}

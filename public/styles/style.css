@@ -1,0 +1,50 @@
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/styles.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap);
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/styles.scss (1) ***!
+  \******************************************************************************************************************************************************************************************************************************/
+body {
+  color: #fff;
+  background-color: rgb(81, 55, 80);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 18px;
+  height: 36px;
+  min-width: 104px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  font-size: 1rem;
+}
+.btn--active {
+  background-color: rgb(244, 241, 233);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+}

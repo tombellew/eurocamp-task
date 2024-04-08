@@ -1,0 +1,79 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-extra-semi": "error",
+    "no-dupe-keys": "error",
+    "no-dupe-args": "error",
+    "no-debugger": "error",
+    "no-duplicate-case": "error",
+    "no-console": [
+      1,
+      {
+        "allow": [
+          "warn",
+          "error",
+          "info"
+        ]
+      }
+    ],
+    "no-undefined": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "camelcase": 1,
+    "max-params": [
+      "error",
+      5
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-empty": "error",
+    "no-use-before-define": "error",
+    "prefer-const": "warn",
+    "no-unreachable": "error",
+    "valid-typeof": "error",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "ignorePatterns": ["*/tools/*", "*.d.ts", "jest.*", "*.test.*", "babel*", "/*"],
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": 0
+      }
+    }
+  ]
+}
+
+ 
