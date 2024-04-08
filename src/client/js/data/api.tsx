@@ -22,6 +22,7 @@ export const deleteEntity = async (entity: IState['activeEntity'], id: IEntity['
 
   switch (response.status) {
     case 200:
+      return response.data
     
     default:
       console.error(response)
